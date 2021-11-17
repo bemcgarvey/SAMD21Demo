@@ -19,7 +19,7 @@ U 1 1 6191A1BA
 P 4600 3100
 F 0 "IC1" H 5350 2700 50  0000 L CNN
 F 1 "ATSAMD21G18A-AU" H 5100 1850 50  0000 L CNN
-F 2 "QFP50P900X900X120-48N" H 6150 3700 50  0001 L CNN
+F 2 "SamacSys_Parts:QFP50P900X900X120-48N" H 6150 3700 50  0001 L CNN
 F 3 "" H 6150 3600 50  0001 L CNN
 F 4 "ATMEL - ATSAMD21G18A-AU - MCU, 32BIT, CORTEX-M0+, 48MHZ, TQFP-48" H 6150 3500 50  0001 L CNN "Description"
 F 5 "1.2" H 6150 3400 50  0001 L CNN "Height"
@@ -210,4 +210,68 @@ Wire Wire Line
 	4300 4100 4600 4100
 Wire Wire Line
 	4300 4200 4600 4200
+Text GLabel 4900 5350 3    50   Input ~ 0
+PA08
+Text GLabel 5000 5350 3    50   Input ~ 0
+PA09
+Text GLabel 5100 5350 3    50   Input ~ 0
+PA10
+Text GLabel 5200 5350 3    50   Input ~ 0
+PA11
+Text GLabel 5500 5350 3    50   Input ~ 0
+PB10
+Text GLabel 5600 5350 3    50   Input ~ 0
+PB11
+Text GLabel 5700 5350 3    50   Input ~ 0
+PA12
+Text GLabel 5800 5350 3    50   Input ~ 0
+PA13
+Text GLabel 5900 5350 3    50   Input ~ 0
+PA14
+Text GLabel 6000 5350 3    50   Input ~ 0
+PA15
+Text GLabel 6700 4000 2    50   Input ~ 0
+PA18
+Text GLabel 6700 3900 2    50   Input ~ 0
+PA19
+Text GLabel 6700 3800 2    50   Input ~ 0
+PA20
+Text GLabel 6700 3700 2    50   Input ~ 0
+PA21
+Text GLabel 6700 3600 2    50   Input ~ 0
+PA22
+Wire Wire Line
+	6300 3600 6700 3600
+Wire Wire Line
+	6300 3700 6700 3700
+Wire Wire Line
+	6300 3800 6700 3800
+Wire Wire Line
+	6300 3900 6700 3900
+Wire Wire Line
+	6300 4000 6700 4000
+Wire Wire Line
+	4900 5000 4900 5350
+Wire Wire Line
+	5000 5000 5000 5350
+Wire Wire Line
+	5100 5000 5100 5350
+Wire Wire Line
+	5200 5000 5200 5350
+Wire Wire Line
+	5500 5000 5500 5350
+Wire Wire Line
+	5600 5000 5600 5350
+Wire Wire Line
+	5700 5000 5700 5350
+Wire Wire Line
+	5800 5000 5800 5350
+Wire Wire Line
+	5900 5000 5900 5350
+Wire Wire Line
+	6000 5000 6000 5350
+Text GLabel 5400 2200 1    50   Input ~ 0
+VDDCORE
+Wire Wire Line
+	5400 2300 5400 2200
 $EndSCHEMATC
