@@ -240,8 +240,8 @@ Wire Wire Line
 Connection ~ 2300 4100
 Wire Wire Line
 	2300 4100 2500 4100
-Text Notes 2150 5000 0    50   ~ 0
-VDDIO x 3
+Text Notes 1850 5000 0    50   ~ 0
+VDDIO x 2, VDDIN
 $Comp
 L Device:C C7
 U 1 1 6163B670
@@ -264,7 +264,7 @@ F 3 "" H 4000 4550 50  0001 C CNN
 	1    4000 4550
 	1    0    0    -1  
 $EndComp
-Text GLabel 4650 4250 2    50   Input ~ 0
+Text GLabel 4000 4100 1    50   Input ~ 0
 VDDCORE
 $Comp
 L Device:C C6
@@ -949,8 +949,6 @@ Wire Wire Line
 Text Notes 5550 1600 0    50   ~ 0
 USB_VBUS_SENSE enable
 Wire Wire Line
-	4000 4250 4650 4250
-Wire Wire Line
 	1700 4650 2100 4650
 Text GLabel 1300 6750 0    50   Input ~ 0
 RESET
@@ -970,4 +968,6 @@ Text GLabel 8600 4400 1    50   Input ~ 0
 PB22
 Text GLabel 6200 2250 3    50   Input ~ 0
 PA23
+Wire Wire Line
+	4000 4250 4000 4100
 $EndSCHEMATC

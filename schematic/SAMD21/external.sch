@@ -284,9 +284,9 @@ F 3 "" H 1750 4800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Text GLabel 1550 4900 0    50   Input ~ 0
-SERCOM5_PAD0
+SERCOM2_PAD0
 Text GLabel 2450 4900 2    50   Input ~ 0
-SERCOM5_PAD1
+SERCOM2_PAD1
 Wire Wire Line
 	2250 4900 2300 4900
 Wire Wire Line
@@ -568,7 +568,7 @@ U 1 1 619CB274
 P 7500 4500
 F 0 "J12" H 7550 4825 50  0000 C CNN
 F 1 "Conn_02x06_Odd_Even" H 7550 4826 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Vertical_SMD" H 7500 4500 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Vertical" H 7500 4500 50  0001 C CNN
 F 3 "~" H 7500 4500 50  0001 C CNN
 	1    7500 4500
 	1    0    0    -1  
@@ -617,9 +617,9 @@ PB10
 Text GLabel 5200 5900 2    50   Input ~ 0
 PB11
 Text GLabel 4500 6000 0    50   Input ~ 0
-PA12
+SERCOM2_PAD0
 Text GLabel 5200 6000 2    50   Input ~ 0
-PA13
+SERCOM2_PAD1
 Text GLabel 4500 6100 0    50   Input ~ 0
 PA14
 Text GLabel 5200 6100 2    50   Input ~ 0
@@ -657,7 +657,7 @@ SWCLK
 Text GLabel 7900 5900 2    50   Input ~ 0
 SWDIO
 Text GLabel 7200 6000 0    50   Input ~ 0
-SERCOM5_PAD0
+PB02
 Text GLabel 7900 6000 2    50   Input ~ 0
-SERCOM5_PAD1
+PB03
 $EndSCHEMATC

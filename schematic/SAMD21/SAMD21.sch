@@ -45,7 +45,7 @@ $EndSheet
 Text Notes 1250 1800 0    79   ~ 16
 Power, leds\nUSB connectors,\nbuttons
 Text Notes 1250 3450 0    79   ~ 16
-Connectors and\nUSB to Serial
+Headers and\nUSB to Serial
 Text GLabel 5700 2000 1    50   Input ~ 0
 RESET
 Text GLabel 4300 3600 0    50   Input ~ 0
@@ -116,10 +116,10 @@ Text GLabel 4300 3100 0    50   Input ~ 0
 SERCOM1_PAD0
 Text GLabel 4300 3200 0    50   Input ~ 0
 SERCOM1_PAD1
-Text GLabel 4900 2000 1    50   Input ~ 0
-SERCOM5_PAD1
-Text GLabel 5000 2000 1    50   Input ~ 0
-SERCOM5_PAD0
+Text GLabel 5800 5350 3    50   Input ~ 0
+SERCOM2_PAD1
+Text GLabel 5700 5350 3    50   Input ~ 0
+SERCOM2_PAD0
 Wire Wire Line
 	4600 3100 4300 3100
 Wire Wire Line
@@ -222,10 +222,6 @@ Text GLabel 5500 5350 3    50   Input ~ 0
 PB10
 Text GLabel 5600 5350 3    50   Input ~ 0
 PB11
-Text GLabel 5700 5350 3    50   Input ~ 0
-PA12
-Text GLabel 5800 5350 3    50   Input ~ 0
-PA13
 Text GLabel 5900 5350 3    50   Input ~ 0
 PA14
 Text GLabel 6000 5350 3    50   Input ~ 0
@@ -274,4 +270,8 @@ Text GLabel 5400 2200 1    50   Input ~ 0
 VDDCORE
 Wire Wire Line
 	5400 2300 5400 2200
+Text GLabel 4900 2000 1    50   Input ~ 0
+PB03
+Text GLabel 5000 2000 1    50   Input ~ 0
+PB02
 $EndSCHEMATC
