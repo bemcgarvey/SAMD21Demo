@@ -266,12 +266,12 @@ Wire Wire Line
 	5900 5000 5900 5350
 Wire Wire Line
 	6000 5000 6000 5350
-Text GLabel 5400 2200 1    50   Input ~ 0
+Text GLabel 5400 2000 1    50   Input ~ 0
 VDDCORE
-Wire Wire Line
-	5400 2300 5400 2200
 Text GLabel 4900 2000 1    50   Input ~ 0
 PB03
 Text GLabel 5000 2000 1    50   Input ~ 0
 PB02
+Wire Wire Line
+	5400 2000 5400 2300
 $EndSCHEMATC
