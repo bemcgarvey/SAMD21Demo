@@ -378,7 +378,7 @@ U 1 1 616F34E3
 P 8600 1400
 F 0 "J5" H 8370 1389 50  0000 R CNN
 F 1 "USB_B_Micro" H 8370 1298 50  0000 R CNN
-F 2 "SamacSys_Parts:USB_Micro-B_Amphenol_10104110_Horizontal-With_pins" H 8750 1350 50  0001 C CNN
+F 2 "Connector_USB:USB_Micro-B_Amphenol_10118194_Horizontal" H 8750 1350 50  0001 C CNN
 F 3 "~" H 8750 1350 50  0001 C CNN
 	1    8600 1400
 	-1   0    0    -1  
