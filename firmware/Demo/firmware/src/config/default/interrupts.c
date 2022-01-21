@@ -49,6 +49,7 @@
 // *****************************************************************************
 // *****************************************************************************
 
+#include "configuration.h"
 #include "device_vectors.h"
 #include "interrupts.h"
 #include "definitions.h"
@@ -87,14 +88,12 @@ extern void USB_Handler                ( void ) __attribute__((weak, alias("Dumm
 extern void EVSYS_Handler              ( void ) __attribute__((weak, alias("Dummy_Handler")));
 extern void SERCOM0_Handler            ( void ) __attribute__((weak, alias("Dummy_Handler")));
 extern void SERCOM1_Handler            ( void ) __attribute__((weak, alias("Dummy_Handler")));
-extern void SERCOM2_Handler            ( void ) __attribute__((weak, alias("Dummy_Handler")));
 extern void SERCOM3_Handler            ( void ) __attribute__((weak, alias("Dummy_Handler")));
 extern void SERCOM4_Handler            ( void ) __attribute__((weak, alias("Dummy_Handler")));
 extern void SERCOM5_Handler            ( void ) __attribute__((weak, alias("Dummy_Handler")));
 extern void TCC0_Handler               ( void ) __attribute__((weak, alias("Dummy_Handler")));
 extern void TCC1_Handler               ( void ) __attribute__((weak, alias("Dummy_Handler")));
 extern void TCC2_Handler               ( void ) __attribute__((weak, alias("Dummy_Handler")));
-extern void TC4_Handler                ( void ) __attribute__((weak, alias("Dummy_Handler")));
 extern void TC5_Handler                ( void ) __attribute__((weak, alias("Dummy_Handler")));
 extern void ADC_Handler                ( void ) __attribute__((weak, alias("Dummy_Handler")));
 extern void AC_Handler                 ( void ) __attribute__((weak, alias("Dummy_Handler")));
@@ -131,7 +130,7 @@ const H3DeviceVectors exception_table=
     .pfnEVSYS_Handler              = EVSYS_Handler,
     .pfnSERCOM0_Handler            = SERCOM0_Handler,
     .pfnSERCOM1_Handler            = SERCOM1_Handler,
-    .pfnSERCOM2_Handler            = SERCOM2_Handler,
+    .pfnSERCOM2_Handler            = SERCOM2_I2C_InterruptHandler,
     .pfnSERCOM3_Handler            = SERCOM3_Handler,
     .pfnSERCOM4_Handler            = SERCOM4_Handler,
     .pfnSERCOM5_Handler            = SERCOM5_Handler,
@@ -139,7 +138,7 @@ const H3DeviceVectors exception_table=
     .pfnTCC1_Handler               = TCC1_Handler,
     .pfnTCC2_Handler               = TCC2_Handler,
     .pfnTC3_Handler                = TC3_TimerInterruptHandler,
-    .pfnTC4_Handler                = TC4_Handler,
+    .pfnTC4_Handler                = TC4_TimerInterruptHandler,
     .pfnTC5_Handler                = TC5_Handler,
     .pfnADC_Handler                = ADC_Handler,
     .pfnAC_Handler                 = AC_Handler,

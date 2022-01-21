@@ -26,7 +26,7 @@
 #include <stdbool.h>                    // Defines true
 #include <stdlib.h>                     // Defines EXIT_FAILURE
 #include "definitions.h"                // SYS function prototypes
-
+#include "lcd.h"
 
 // *****************************************************************************
 // *****************************************************************************
@@ -35,12 +35,16 @@
 // *****************************************************************************
 
 void TC3Callback(TC_TIMER_STATUS status, uintptr_t context);
+bool updateCount = false;
+int count = 0;
 
 int main ( void )
 {
     /* Initialize all modules */
     SYS_Initialize ( NULL );
     RedLed_Set();
+    LCDInit();
+    lprintf(0, "Hello World");
     printf("Hello World\r\n");
     TC3_TimerCallbackRegister(TC3Callback, (uintptr_t) NULL);
     TC3_TimerStart();
@@ -65,6 +69,10 @@ int main ( void )
         } else {
             GreenLed_Clear();
         }
+        if (updateCount) {
+            updateCount = false;
+            lprintf(1, "%d", count);
+        }
     }
 
     /* Execution should not come here during normal operation */
@@ -75,6 +83,8 @@ int main ( void )
 
 void TC3Callback(TC_TIMER_STATUS status, uintptr_t context) {
     BlueLed_Toggle();
+    ++count;
+    updateCount = true;
 }
 
 /*******************************************************************************
