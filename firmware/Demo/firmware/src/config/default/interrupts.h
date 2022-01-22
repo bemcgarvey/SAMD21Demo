@@ -63,6 +63,7 @@ void HardFault_Handler (void);
 void SERCOM2_I2C_InterruptHandler (void);
 void TC3_TimerInterruptHandler (void);
 void TC4_TimerInterruptHandler (void);
+void AC_InterruptHandler (void);
 
 
 

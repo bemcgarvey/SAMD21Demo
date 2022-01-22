@@ -35,6 +35,8 @@
 // *****************************************************************************
 
 void TC3Callback(TC_TIMER_STATUS status, uintptr_t context);
+void ACCallback(uint8_t int_flags, uintptr_t context);
+
 bool updateCount = false;
 int count = 0;
 
@@ -48,6 +50,8 @@ int main ( void )
     printf("Hello World\r\n");
     TC3_TimerCallbackRegister(TC3Callback, (uintptr_t) NULL);
     TC3_TimerStart();
+    AC_CallbackRegister(ACCallback, (uintptr_t) NULL);
+    AC_Start(AC_CHANNEL0);
     while ( true )
     {
         char rx;
@@ -58,11 +62,6 @@ int main ( void )
             if (rx == 'r') {
                 RedLed_Toggle();
             }
-        }
-        if (!Button1_Get()) {
-            YellowLed_Set();
-        } else {
-            YellowLed_Clear();
         }
         if (!Button2_Get()) {
             GreenLed_Set();
@@ -85,6 +84,10 @@ void TC3Callback(TC_TIMER_STATUS status, uintptr_t context) {
     BlueLed_Toggle();
     ++count;
     updateCount = true;
+}
+
+void ACCallback(uint8_t int_flags, uintptr_t context) {
+    YellowLed_Toggle();
 }
 
 /*******************************************************************************

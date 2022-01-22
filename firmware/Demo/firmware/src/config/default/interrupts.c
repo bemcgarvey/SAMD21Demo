@@ -96,7 +96,6 @@ extern void TCC1_Handler               ( void ) __attribute__((weak, alias("Dumm
 extern void TCC2_Handler               ( void ) __attribute__((weak, alias("Dummy_Handler")));
 extern void TC5_Handler                ( void ) __attribute__((weak, alias("Dummy_Handler")));
 extern void ADC_Handler                ( void ) __attribute__((weak, alias("Dummy_Handler")));
-extern void AC_Handler                 ( void ) __attribute__((weak, alias("Dummy_Handler")));
 extern void DAC_Handler                ( void ) __attribute__((weak, alias("Dummy_Handler")));
 extern void PTC_Handler                ( void ) __attribute__((weak, alias("Dummy_Handler")));
 extern void I2S_Handler                ( void ) __attribute__((weak, alias("Dummy_Handler")));
@@ -141,7 +140,7 @@ const H3DeviceVectors exception_table=
     .pfnTC4_Handler                = TC4_TimerInterruptHandler,
     .pfnTC5_Handler                = TC5_Handler,
     .pfnADC_Handler                = ADC_Handler,
-    .pfnAC_Handler                 = AC_Handler,
+    .pfnAC_Handler                 = AC_InterruptHandler,
     .pfnDAC_Handler                = DAC_Handler,
     .pfnPTC_Handler                = PTC_Handler,
     .pfnI2S_Handler                = I2S_Handler,

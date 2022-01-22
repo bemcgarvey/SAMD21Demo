@@ -186,6 +186,7 @@ void SYS_Initialize ( void* data )
 
     EVSYS_Initialize();
 
+    AC_Initialize();
     TC3_TimerInitialize();
 
     TC4_TimerInitialize();
@@ -193,9 +194,6 @@ void SYS_Initialize ( void* data )
 
 
     sysObj.sysTime = SYS_TIME_Initialize(SYS_TIME_INDEX_0, (SYS_MODULE_INIT *)&sysTimeInitData);
-
-
-    APP_Initialize();
 
 
     NVIC_Initialize();

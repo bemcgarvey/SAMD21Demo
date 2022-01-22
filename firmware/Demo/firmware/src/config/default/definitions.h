@@ -56,15 +56,13 @@
 #include "peripheral/port/plib_port.h"
 #include "peripheral/clock/plib_clock.h"
 #include "peripheral/nvic/plib_nvic.h"
+#include "peripheral/ac/plib_ac.h"
 #include "peripheral/tc/plib_tc3.h"
+#include "system/time/sys_time.h"
+#include "peripheral/tc/plib_tc4.h"
 #include "system/int/sys_int.h"
 #include "osal/osal.h"
 #include "system/debug/sys_debug.h"
-#include "system/time/sys_time.h"
-#include "peripheral/tc/plib_tc4.h"
-#include "app.h"
-
-
 
 // DOM-IGNORE-BEGIN
 #ifdef __cplusplus  // Provide C++ Compatibility
