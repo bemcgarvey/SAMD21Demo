@@ -191,6 +191,8 @@ void SYS_Initialize ( void* data )
 
     TC4_TimerInitialize();
 
+    TCC0_PWMInitialize();
+
 
 
     sysObj.sysTime = SYS_TIME_Initialize(SYS_TIME_INDEX_0, (SYS_MODULE_INIT *)&sysTimeInitData);

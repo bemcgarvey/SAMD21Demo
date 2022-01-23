@@ -6,13 +6,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 0D18A719A1E40A8875895284967F66D0
-- generatedChecksum: 45E0E189E1CB978C7E2422DF9DC3A150
+- generatedChecksum: D308F4158B85DDA873B2A1912335EDDA
   logicalPath: config/default
   name: initialization.c
   physicalPath: ''
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 45E0E189E1CB978C7E2422DF9DC3A150
+  userChecksum: D308F4158B85DDA873B2A1912335EDDA
 - generatedChecksum: E27F9972952F815EC629C0D97B56BA83
   logicalPath: config/default
   name: interrupts.c
@@ -41,13 +41,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: A26FF8C0D88CAEAA1D2BF07628B96CA6
-- generatedChecksum: 6A8BF55FFBFB7FF6C0DA04A8C35EF1B6
+- generatedChecksum: F0CB2221EFB93CF5C926F7CD31DE9B63
   logicalPath: config/default/peripheral/clock
   name: plib_clock.c
   physicalPath: peripheral/clock
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 6A8BF55FFBFB7FF6C0DA04A8C35EF1B6
+  userChecksum: F0CB2221EFB93CF5C926F7CD31DE9B63
 - generatedChecksum: C3ECDED3D6301DB0DE622293ED615D21
   logicalPath: config/default/peripheral/evsys
   name: plib_evsys.c
@@ -69,13 +69,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 8E76B0609233122F5E1694614CEC13B1
-- generatedChecksum: 09CCCCDE8CBA82C747AE5014CA2A569E
+- generatedChecksum: D343B354DA3C68EBB6A74996F647CCD9
   logicalPath: config/default/peripheral/port
   name: plib_port.c
   physicalPath: peripheral/port
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 09CCCCDE8CBA82C747AE5014CA2A569E
+  userChecksum: D343B354DA3C68EBB6A74996F647CCD9
 - generatedChecksum: 8305C3A7C04B84DB1A1657D9EA9EF32E
   logicalPath: config/default/peripheral/sercom/usart
   name: plib_sercom1_usart.c
@@ -104,6 +104,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: DF855ED6B99DBC2F8AB430CBCBC50482
+- generatedChecksum: 8617289C32EC242D8C87995FEEAB2683
+  logicalPath: config/default/peripheral/tcc
+  name: plib_tcc0.c
+  physicalPath: peripheral/tcc
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 8617289C32EC242D8C87995FEEAB2683
 - generatedChecksum: 2645E564BD945DAED1424FD8D7B39330
   logicalPath: config/default
   name: startup_xc32.c
@@ -251,13 +258,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 2AD9700A41DC94A60C663A17CEDB2703
-- generatedChecksum: 6C5CFA47C2F840F7071E029B600F66B7
+- generatedChecksum: 360ABF511CE11600A9AE356909CDA0F3
   logicalPath: config/default
   name: definitions.h
   physicalPath: ''
   security: NON_SECURE
   type: HEADER
-  userChecksum: 6C5CFA47C2F840F7071E029B600F66B7
+  userChecksum: 360ABF511CE11600A9AE356909CDA0F3
 - generatedChecksum: 7200FE37B300952D70C11DFE5DA3D6B7
   logicalPath: config/default
   name: device.h
@@ -552,6 +559,20 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 6DBEAF7BD42014F5492374805406687A
+- generatedChecksum: D61131578230DD9BF49B822C0AE10834
+  logicalPath: config/default/peripheral/tcc
+  name: plib_tcc0.h
+  physicalPath: peripheral/tcc
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: D61131578230DD9BF49B822C0AE10834
+- generatedChecksum: A3CDE469C6A4D2725F34E837408E286C
+  logicalPath: config/default/peripheral/tcc
+  name: plib_tcc_common.h
+  physicalPath: peripheral/tcc
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: A3CDE469C6A4D2725F34E837408E286C
 - generatedChecksum: 482E54FA91E3C975FBC8AEE336572A05
   logicalPath: packs/ATSAMD21G18A_DFP/component
   name: pm.h

@@ -45,6 +45,10 @@
               <itemPath>../src/config/default/peripheral/tc/plib_tc3.h</itemPath>
               <itemPath>../src/config/default/peripheral/tc/plib_tc4.h</itemPath>
             </logicalFolder>
+            <logicalFolder name="f9" displayName="tcc" projectFiles="true">
+              <itemPath>../src/config/default/peripheral/tcc/plib_tcc_common.h</itemPath>
+              <itemPath>../src/config/default/peripheral/tcc/plib_tcc0.h</itemPath>
+            </logicalFolder>
           </logicalFolder>
           <logicalFolder name="f2" displayName="system" projectFiles="true">
             <logicalFolder name="f2" displayName="debug" projectFiles="true">
@@ -209,6 +213,9 @@
               <itemPath>../src/config/default/peripheral/tc/plib_tc3.c</itemPath>
               <itemPath>../src/config/default/peripheral/tc/plib_tc4.c</itemPath>
             </logicalFolder>
+            <logicalFolder name="f9" displayName="tcc" projectFiles="true">
+              <itemPath>../src/config/default/peripheral/tcc/plib_tcc0.c</itemPath>
+            </logicalFolder>
           </logicalFolder>
           <logicalFolder name="f2" displayName="stdio" projectFiles="true">
             <itemPath>../src/config/default/stdio/xc32_monitor.c</itemPath>
@@ -252,6 +259,7 @@
         <itemPath>../src/config/default/default.mhc/sys_time.yml</itemPath>
         <itemPath>../src/config/default/default.mhc/tc3.yml</itemPath>
         <itemPath>../src/config/default/default.mhc/tc4.yml</itemPath>
+        <itemPath>../src/config/default/default.mhc/tcc0.yml</itemPath>
       </logicalFolder>
       <itemPath>Makefile</itemPath>
       <itemPath>../src/config/default/harmony-manifest-success.yml</itemPath>
