@@ -8,6 +8,7 @@
 * Analog comparator
 * PWM h-bridge control
 * USB MSD device
+* I2C LCD
 
 ### All firmware is built in MPLabX with MPLab Harmony 3 and the XC32 compiler.  
 ### Schematic and PCB were made with KiCAD  
