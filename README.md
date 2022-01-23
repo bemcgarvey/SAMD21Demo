@@ -4,7 +4,10 @@
   
 ### There is sample firmware for:
 * Basic gpio and interrupts
-* Watch this space - just getting started with firmware
+* Sleepwalking
+* Analog comparator
+* PWM h-bridge control
+* USB MSD device
 
 ### All firmware is built in MPLabX with MPLab Harmony 3 and the XC32 compiler.  
 ### Schematic and PCB were made with KiCAD  
