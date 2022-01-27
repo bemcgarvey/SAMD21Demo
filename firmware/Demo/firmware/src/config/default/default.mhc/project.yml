@@ -69,13 +69,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 8E76B0609233122F5E1694614CEC13B1
-- generatedChecksum: D343B354DA3C68EBB6A74996F647CCD9
+- generatedChecksum: 8BE8BDE6A4F4A12E387E043BEE3C8E4C
   logicalPath: config/default/peripheral/port
   name: plib_port.c
   physicalPath: peripheral/port
   security: NON_SECURE
   type: SOURCE
-  userChecksum: D343B354DA3C68EBB6A74996F647CCD9
+  userChecksum: 8BE8BDE6A4F4A12E387E043BEE3C8E4C
 - generatedChecksum: 8305C3A7C04B84DB1A1657D9EA9EF32E
   logicalPath: config/default/peripheral/sercom/usart
   name: plib_sercom1_usart.c
@@ -104,13 +104,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: DF855ED6B99DBC2F8AB430CBCBC50482
-- generatedChecksum: 8617289C32EC242D8C87995FEEAB2683
+- generatedChecksum: 8B5741A59075E765FF7C5AB021E9933E
   logicalPath: config/default/peripheral/tcc
   name: plib_tcc0.c
   physicalPath: peripheral/tcc
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 8617289C32EC242D8C87995FEEAB2683
+  userChecksum: 8B5741A59075E765FF7C5AB021E9933E
 - generatedChecksum: 2645E564BD945DAED1424FD8D7B39330
   logicalPath: config/default
   name: startup_xc32.c

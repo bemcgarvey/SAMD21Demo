@@ -2009,5 +2009,14 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '0'}
+  - type: Setting
+    attributes: {id: XC32_LINKER_PREPROC_MARCOS}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: value}
+        children:
+        - {type: Value}
 - type: ElementPosition
   attributes: {x: '310', y: '59', id: core}
